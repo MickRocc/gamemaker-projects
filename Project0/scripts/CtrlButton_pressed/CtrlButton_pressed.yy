@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"CtrlButton_pressed",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"CtrlButton_pressed",
+  "parent":{
+    "name":"Functions",
+    "path":"folders/Functions.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

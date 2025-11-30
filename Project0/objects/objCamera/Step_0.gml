@@ -76,8 +76,8 @@ if (!is_scrolling)
 if (is_scrolling)
 {
     // ... (Existing smooth scrolling logic here)
-    x = lerp(x, target_x, scroll_speed / 100);
-    y = lerp(y, target_y, scroll_speed / 100);
+    x = lerp(x, target_x, scroll_speed / 25);
+    y = lerp(y, target_y, scroll_speed / 25);
 
     // Check if arrived
     if (abs(x - target_x) < 1 && abs(y - target_y) < 1)
