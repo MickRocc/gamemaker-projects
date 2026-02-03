@@ -8,19 +8,19 @@ var h_input = 0
 var v_input = 0
 var hspd = 0
 var vspd = 0
-if(h_input == CtrlButton_pressed(global.controlMode, global.playerRight) - CtrlButton_pressed(global.controlMode, global.playerLeft)!=-1){
-	h_input = CtrlButton_pressed(global.controlMode, global.playerRight) - CtrlButton_pressed(global.controlMode, global.playerLeft)
+if(h_input == MveButton_pressed(global.controlMode, global.playerRight) - MveButton_pressed(global.controlMode, global.playerLeft)!=-1){
+	h_input = MveButton_pressed(global.controlMode, global.playerRight) - MveButton_pressed(global.controlMode, global.playerLeft)
 }
-if(v_input == CtrlButton_pressed(global.controlMode, global.playerDown) - CtrlButton_pressed(global.controlMode, global.playerUp)!=-1){
-	v_input = CtrlButton_pressed(global.controlMode, global.playerDown) - CtrlButton_pressed(global.controlMode, global.playerUp)
+if(v_input == MveButton_pressed(global.controlMode, global.playerDown) - MveButton_pressed(global.controlMode, global.playerUp)!=-1){
+	v_input = MveButton_pressed(global.controlMode, global.playerDown) - MveButton_pressed(global.controlMode, global.playerUp)
 }
 hspd = h_input * global.playerSpeed
 vspd = v_input * global.playerSpeed
 
 
 // --- 1. Calculate Raw Input ---
-h_input = CtrlButton_pressed(global.controlMode, global.playerRight) - CtrlButton_pressed(global.controlMode, global.playerLeft);
-v_input = CtrlButton_pressed(global.controlMode, global.playerDown) - CtrlButton_pressed(global.controlMode, global.playerUp); 
+h_input = MveButton_pressed(global.controlMode, global.playerRight) - MveButton_pressed(global.controlMode, global.playerLeft);
+v_input = MveButton_pressed(global.controlMode, global.playerDown) - MveButton_pressed(global.controlMode, global.playerUp); 
 
 // --- 2. Directional Priority Check (Prevent Diagonal Movement) ---
 
@@ -48,11 +48,9 @@ vspd = v_input * global.playerSpeed;
 // --- 2. Horizontal (X-Axis) Collision Check ---
 
 // Check if moving horizontally will intersect Object3
-if (place_meeting(x + hspd, y, Object3))
-{
+if (place_meeting(x + hspd, y, Object3)){
     // If a collision *will* happen, move as close as possible without colliding
-    while (!place_meeting(x + sign(hspd), y, Object3))
-    {
+    while (!place_meeting(x + sign(hspd), y, Object3)){
         x += sign(hspd)
     }
     // Stop horizontal movement
@@ -66,11 +64,9 @@ x += hspd
 // --- 3. Vertical (Y-Axis) Collision Check ---
 
 // Check if moving vertically will intersect Object3
-if (place_meeting(x, y + vspd, Object3))
-{
+if (place_meeting(x, y + vspd, Object3)){
     // If a collision *will* happen, move as close as possible without colliding
-    while (!place_meeting(x, y + sign(vspd), Object3))
-    {
+    while (!place_meeting(x, y + sign(vspd), Object3)){
         y += sign(vspd)
     }
     // Stop vertical movement
@@ -79,3 +75,12 @@ if (place_meeting(x, y + vspd, Object3))
 
 // Apply the (potentially reduced or zeroed) vertical speed
 y += vspd
+
+
+if(hspd != 0 || vspd != 0){
+	moving = true
+}
+else{
+	moving = false
+}
+player_animation(global.playerDir,global.playerAction)

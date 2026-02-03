@@ -21,7 +21,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.2.213",
   },
   "name":"Project0",
   "resources":[
@@ -30,8 +30,10 @@
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},},
     {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"id":{"name":"rmTestField","path":"rooms/rmTestField/rmTestField.yy",},},
-    {"id":{"name":"CtrlButton_pressed","path":"scripts/CtrlButton_pressed/CtrlButton_pressed.yy",},},
     {"id":{"name":"initGame","path":"scripts/initGame/initGame.yy",},},
+    {"id":{"name":"MveButton_pressed","path":"scripts/MveButton_pressed/MveButton_pressed.yy",},},
+    {"id":{"name":"player_animation","path":"scripts/player_animation/player_animation.yy",},},
+    {"id":{"name":"version_history","path":"scripts/version_history/version_history.yy",},},
     {"id":{"name":"sprCamera","path":"sprites/sprCamera/sprCamera.yy",},},
     {"id":{"name":"sprPlayerTest","path":"sprites/sprPlayerTest/sprPlayerTest.yy",},},
     {"id":{"name":"sprTestBlock","path":"sprites/sprTestBlock/sprTestBlock.yy",},},

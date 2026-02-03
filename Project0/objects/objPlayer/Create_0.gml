@@ -1,4 +1,11 @@
-/// @desc Force Player to Start in Center of Screen
+/// @desc Setup Player
+ani_min_frame = 0
+ani_max_frame = 0
+player_animation(global.playerDir,global.playerAction)
+
+alarm_set(0,7)
+
+// Force Player to Start in Center of Screen
 
 // Assuming the global variables are set by the camera object first
 var cam_x = floor(x / global.roomSize_width) * global.roomSize_width;

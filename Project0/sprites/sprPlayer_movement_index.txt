@@ -1,0 +1,13 @@
+ Image Index	Movement Frame
+ 	0 	Down Frame 	0
+ 	1 	Down Frame 	1
+	2 	Down Frame 	2
+	3 	Right Frame 	0
+	4 	Right Frame 	1
+	5 	Right Frame 	2
+	6	Left Frame 	0
+	7 	Left Frame 	1
+	8 	Left Frame 	2
+	9 	Up Frame 	0
+	10 	Up Frame 	1
+	11 	Up Frame 	2

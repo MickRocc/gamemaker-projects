@@ -1,3 +1,4 @@
+///@desc initGame()
 function initGame(){
 	/*initialize global variables
 	**Room to Room Navigation Variables**
@@ -10,8 +11,11 @@ function initGame(){
 	playerRight				the key/button to move the character right
 	playerUp				the key/button to move the character Up
 	playerDown				the key/button to move the character down
-	playerhDir				the horizontal direction the player is facing			0 = No, -1 = left, 1 = right
-	playervDir				the vertical direction the player is facing				0 = No, -1 = up, 1 = down
+	playerAtk				the key/button to attack
+	playerItm				the key/button to use an item
+	playerDir				the direction the player is facing						up, down, left, right
+	playerAction			the action the player is taking							walk, use item, attack
+	
 	*/
 	global.roomSize_width = 640
 	global.roomSize_height = 480
@@ -21,6 +25,9 @@ function initGame(){
 	global.playerRight = vk_right
 	global.playerUp = vk_up
 	global.playerDown = vk_down
-	global.playerhDir = 1
-	global.playervDir = 0
+	global.playerAtk = ord("Z")
+	global.playerItm = ord("X")
+	global.playerDir = "down"
+	global.playerFrame = 0
+	global.playerAction = "walk"
 }

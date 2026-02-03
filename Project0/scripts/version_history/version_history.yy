@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"CtrlButton_pressed",
+  "%Name":"version_history",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"CtrlButton_pressed",
+  "name":"version_history",
   "parent":{
-    "name":"Functions",
-    "path":"folders/Functions.yy",
+    "name":"Project0",
+    "path":"Project0.yyp",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
