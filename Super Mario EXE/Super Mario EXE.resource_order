@@ -1,9 +1,21 @@
 {
   "FolderOrderSettings":[
-    {"name":"Rooms","order":1,"path":"folders/Rooms.yy",},
-    {"name":"Sprites","order":2,"path":"folders/Sprites.yy",},
+    {"name":"Fonts","order":4,"path":"folders/Fonts.yy",},
+    {"name":"Game Controllers","order":3,"path":"folders/Game Controllers.yy",},
+    {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
+    {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
   ],
   "ResourceOrderSettings":[
-    {"name":"Script1","order":3,"path":"scripts/Script1/Script1.yy",},
+    {"name":"ftSpecial","order":1,"path":"fonts/ftSpecial/ftSpecial.yy",},
+    {"name":"stgTest","order":1,"path":"rooms/stgTest/stgTest.yy",},
+    {"name":"draw_coin_counter","order":1,"path":"scripts/draw_coin_counter/draw_coin_counter.yy",},
+    {"name":"game_pause","order":3,"path":"scripts/game_pause/game_pause.yy",},
+    {"name":"update_powerup","order":2,"path":"scripts/update_powerup/update_powerup.yy",},
+    {"name":"Variable_Global_Init","order":5,"path":"scripts/Variable_Global_Init/Variable_Global_Init.yy",},
+    {"name":"sprHealthBar","order":1,"path":"sprites/sprHealthBar/sprHealthBar.yy",},
+    {"name":"Sprite4","order":7,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"sprItemBox","order":2,"path":"sprites/sprItemBox/sprItemBox.yy",},
+    {"name":"sprMarioReady","order":3,"path":"sprites/sprMarioReady/sprMarioReady.yy",},
+    {"name":"TileSet1","order":6,"path":"tilesets/TileSet1/TileSet1.yy",},
   ],
 }
