@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"Variable_Global_Init",
+  "%Name":"GameLoad",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"Variable_Global_Init",
+  "name":"GameLoad",
   "parent":{
     "name":"Super Mario EXE",
     "path":"Super Mario EXE.yyp",
