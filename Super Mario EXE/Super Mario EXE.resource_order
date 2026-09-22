@@ -1,7 +1,7 @@
 {
   "FolderOrderSettings":[
-    {"name":"fonts","order":3,"path":"folders/fonts.yy",},
     {"name":"backgrounds","order":1,"path":"folders/backgrounds.yy",},
+    {"name":"fonts","order":3,"path":"folders/fonts.yy",},
     {"name":"objects","order":4,"path":"folders/objects.yy",},
     {"name":"rooms","order":5,"path":"folders/rooms.yy",},
     {"name":"Stages","order":1,"path":"folders/rooms/Stages.yy",},
@@ -9,6 +9,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"ftSpecial","order":1,"path":"fonts/ftSpecial/ftSpecial.yy",},
+    {"name":"objDisplayController","order":2,"path":"objects/objDisplayController/objDisplayController.yy",},
     {"name":"objGameStart","order":1,"path":"objects/objGameStart/objGameStart.yy",},
     {"name":"stgTest","order":1,"path":"rooms/stgTest/stgTest.yy",},
     {"name":"game_pause","order":2,"path":"scripts/game_pause/game_pause.yy",},

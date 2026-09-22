@@ -1,15 +1,19 @@
 // Set the main HUD font
 draw_set_font(ftMain);
 
+// Draw GUI coordinates are independent of the window and display size.
+var guiWidth = display_get_gui_width();
+var guiCenterX = guiWidth * 0.5;
+
 // Center-align text unless changed later
 draw_set_halign(fa_center);
 
 // Check which player is active (0 = Mario, 1 = Luigi)
 if (global.current_player == 0) {
 
-    // Draw "MARIO" at the HUD text position, offset by the view's top-left corner
-    draw_text(view_get_xport(0) + global.playerText_x,
-              view_get_yport(0) + global.playerText_y,
+    // Draw "MARIO" at the HUD text position
+    draw_text(global.playerText_x,
+              global.playerText_y,
               "MARIO");
 
     // Draw Mario's coin counter (custom script)
@@ -18,8 +22,8 @@ if (global.current_player == 0) {
 else if (global.current_player == 1) {
 
     // Draw "LUIGI" at the HUD text position
-    draw_text(view_get_xport(0) + global.playerText_x,
-              view_get_yport(0) + global.playerText_y,
+    draw_text(global.playerText_x,
+              global.playerText_y,
               "LUIGI");
 
     // Center-align again (Luigi HUD uses centered elements)
@@ -30,8 +34,8 @@ else if (global.current_player == 1) {
 
     // Draw Luigi's item box sprite
     draw_sprite(sprItemBox, global.itemBox_item,
-                view_get_xport(0) + global.LuigiItem_x,
-                view_get_yport(0) + global.LuigiItem_y);
+                guiCenterX - 64,
+                global.LuigiItem_y);
 }
 
 // Reset alignment to left for the health bar
@@ -41,50 +45,50 @@ draw_set_halign(fa_left);
 if (global.current_player == 0){
 	
 	draw_sprite(sprHealthBar, global.Mario_powerup,
-            view_get_xport(0) + global.playerHP_x,
-            view_get_yport(0) + global.playerHP_y);
+            global.playerHP_x,
+            global.playerHP_y);
 }
 
 if (global.current_player == 1){
 	
 	draw_sprite(sprHealthBar, global.Luigi_powerup,
-            view_get_xport(0) + global.playerHP_x,
-            view_get_yport(0) + global.playerHP_y);
+            global.playerHP_x,
+            global.playerHP_y);
 }
 
 // Center-align again for the world/timer text
 draw_set_halign(fa_center);
 
 // Draw "WORLD" label
-draw_text(view_get_xport(0) + global.worldText_x,
-          view_get_yport(0) + global.worldText_y,
+draw_text(guiWidth - 400,
+          global.worldText_y,
           "WORLD");
 
 // Draw stage number (e.g., "1-1")
-draw_text(view_get_xport(0) + global.worldText_x,
-          view_get_yport(0) + global.stageText_y,
+draw_text(guiWidth - 400,
+          global.stageText_y,
           "1-" + string(global.stage));
 
 // Draw "TIME" label
-draw_text(view_get_xport(0) + global.timerText_x,
-          view_get_yport(0) + global.timerText_y,
+draw_text(guiWidth - 176,
+          global.timerText_y,
           "TIME");
 
 // Draw the timer digits only if in an actual stage
 if (!(global.next_stage)) {
 	if (global.level_timer >= 100){
-		draw_text(view_get_xport(0) + global.timerDigits_x,
-          view_get_yport(0) + global.timerDigits_y,
+		draw_text(guiWidth - 170,
+          global.timerDigits_y,
           string(global.level_timer));
 	}
 	if (global.level_timer <= 99 && global.level_timer >= 10){
-		draw_text(view_get_xport(0) + global.timerDigits_x,
-          view_get_yport(0) + global.timerDigits_y,
+		draw_text(guiWidth - 170,
+          global.timerDigits_y,
           "0" + string(global.level_timer));
 	}
-	if (global.level_timer < 9){
-		draw_text(view_get_xport(0) + global.timerDigits_x,
-          view_get_yport(0) + global.timerDigits_y,
+	if (global.level_timer < 10){
+		draw_text(guiWidth - 170,
+          global.timerDigits_y,
           "00" + string(global.level_timer));
 	}
 }
@@ -94,18 +98,18 @@ if (global.next_stage) {
 	// Reset alignment to left for any future drawing
 	draw_set_halign(fa_center);
 	// Draw "WORLD" label and stage number
-	draw_text(view_get_xport(0) + global.screen_centerH,
-          view_get_yport(0) + global.worldText_y + 256,
+	draw_text(guiCenterX,
+          global.worldText_y + 256,
           "WORLD " + "1-" + string(global.stage) + "\n\n\n  x ");
 		  draw_set_font(ftSpecial);
-	draw_text(view_get_xport(0) + global.screen_centerH + 64,
-          view_get_yport(0) + global.worldText_y + 316,
+	draw_text(guiCenterX + 64,
+          global.worldText_y + 316,
           "∞");
 	
 	// If the player is Mario
 	if (global.current_player == 0){
-		draw_sprite(sprMarioReady, 0, view_get_xport(0) - 50
-			+ global.screen_centerH, global.worldText_y + 342);
+		draw_sprite(sprMarioReady, 0, guiCenterX - 50,
+			global.worldText_y + 342);
 	}
 }
 
@@ -116,7 +120,7 @@ if (global.HUD_test_mode) {
 	draw_set_halign(fa_left);
 	// Set font color
 	draw_set_color(c_yellow);
-	draw_text(view_get_xport(0)+ 64,view_get_yport(0) + 176,"score "
+	draw_text(64, 176, "score "
 			+ string(global.game_score) + "\n" + "paused?" + string(global.game_paused)
 			+ "\nwin?" + string(global.stage_complete)
 			+ "\n in transition?" + string(global.next_stage)
@@ -126,3 +130,6 @@ if (global.HUD_test_mode) {
 	// Reset font color to white
 	draw_set_color(c_white);
 }
+
+// Do not leave the transition font active for later GUI drawing.
+draw_set_font(ftMain);

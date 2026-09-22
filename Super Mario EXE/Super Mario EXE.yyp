@@ -12,8 +12,8 @@
   },
   "defaultScriptType":1,
   "Folders":[
-    {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"backgrounds","folderPath":"folders/backgrounds.yy","name":"backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"fonts","folderPath":"folders/fonts.yy","name":"fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"objects","folderPath":"folders/objects.yy","name":"objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Game Controllers","folderPath":"folders/objects/Game Controllers.yy","name":"Game Controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"rooms","folderPath":"folders/rooms.yy","name":"rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -33,6 +33,7 @@
   "resources":[
     {"id":{"name":"ftMain","path":"fonts/ftMain/ftMain.yy",},},
     {"id":{"name":"ftSpecial","path":"fonts/ftSpecial/ftSpecial.yy",},},
+    {"id":{"name":"objDisplayController","path":"objects/objDisplayController/objDisplayController.yy",},},
     {"id":{"name":"objGameStart","path":"objects/objGameStart/objGameStart.yy",},},
     {"id":{"name":"objHUD","path":"objects/objHUD/objHUD.yy",},},
     {"id":{"name":"mnMainMenu","path":"rooms/mnMainMenu/mnMainMenu.yy",},},

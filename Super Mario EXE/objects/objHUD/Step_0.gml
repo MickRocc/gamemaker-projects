@@ -1,9 +1,6 @@
 // ---------------------------------------------------------
 // Partially Update HUD Layout Positions
 // ---------------------------------------------------------
-// Screen / View Metrics
-global.screen_centerH = display_get_width() / 2; // Horizontal center of the viewport
-global.screen_maxW    = display_get_width(); // Viewport width
 // Mario coin counter
 global.MarioCoinCounterIco_x	 = global.screen_centerH	- 72;
 global.MarioCoinCounter_x		 = global.screen_centerH;
