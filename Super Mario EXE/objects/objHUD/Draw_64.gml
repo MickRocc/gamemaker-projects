@@ -71,14 +71,26 @@ draw_text(view_get_xport(0) + global.timerText_x,
           "TIME");
 
 // Draw the timer digits only if in an actual stage
-if(!(global.next_stage)){
-	draw_text(view_get_xport(0) + global.timerDigits_x,
+if (!(global.next_stage)) {
+	if (global.level_timer >= 100){
+		draw_text(view_get_xport(0) + global.timerDigits_x,
           view_get_yport(0) + global.timerDigits_y,
           string(global.level_timer));
+	}
+	if (global.level_timer <= 99 && global.level_timer >= 10){
+		draw_text(view_get_xport(0) + global.timerDigits_x,
+          view_get_yport(0) + global.timerDigits_y,
+          "0" + string(global.level_timer));
+	}
+	if (global.level_timer < 9){
+		draw_text(view_get_xport(0) + global.timerDigits_x,
+          view_get_yport(0) + global.timerDigits_y,
+          "00" + string(global.level_timer));
+	}
 }
 
 // If not in a stage, draw extra information
-if(global.next_stage){
+if (global.next_stage) {
 	// Reset alignment to left for any future drawing
 	draw_set_halign(fa_center);
 	// Draw "WORLD" label and stage number
@@ -104,7 +116,7 @@ if (global.HUD_test_mode) {
 	draw_set_halign(fa_left);
 	// Set font color
 	draw_set_color(c_yellow);
-	draw_text(view_get_xport(0),view_get_yport(0) + 176,"score "
+	draw_text(view_get_xport(0)+ 64,view_get_yport(0) + 176,"score "
 			+ string(global.game_score) + "\n" + "paused?" + string(global.game_paused)
 			+ "\nwin?" + string(global.stage_complete)
 			+ "\n in transition?" + string(global.next_stage)
