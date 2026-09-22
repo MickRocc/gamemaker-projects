@@ -12,6 +12,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Game Controllers","folderPath":"folders/Game Controllers.yy","name":"Game Controllers","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -29,14 +30,15 @@
   "resources":[
     {"id":{"name":"ftMain","path":"fonts/ftMain/ftMain.yy",},},
     {"id":{"name":"ftSpecial","path":"fonts/ftSpecial/ftSpecial.yy",},},
-    {"id":{"name":"objGameStart","path":"objects/objGameStart/objGameStart.yy",},},
     {"id":{"name":"objHUD","path":"objects/objHUD/objHUD.yy",},},
+    {"id":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"id":{"name":"stgTest_transition","path":"rooms/stgTest_transition/stgTest_transition.yy",},},
     {"id":{"name":"stgTest","path":"rooms/stgTest/stgTest.yy",},},
     {"id":{"name":"draw_coin_counter","path":"scripts/draw_coin_counter/draw_coin_counter.yy",},},
     {"id":{"name":"game_boot","path":"scripts/game_boot/game_boot.yy",},},
     {"id":{"name":"game_pause","path":"scripts/game_pause/game_pause.yy",},},
     {"id":{"name":"update_powerup","path":"scripts/update_powerup/update_powerup.yy",},},
+    {"id":{"name":"bgTitleScreen","path":"sprites/bgTitleScreen/bgTitleScreen.yy",},},
     {"id":{"name":"sprCoinCounter","path":"sprites/sprCoinCounter/sprCoinCounter.yy",},},
     {"id":{"name":"sprHealthBar","path":"sprites/sprHealthBar/sprHealthBar.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
@@ -47,6 +49,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rmStart","path":"rooms/rmStart/rmStart.yy",},},
     {"roomId":{"name":"stgTest_transition","path":"rooms/stgTest_transition/stgTest_transition.yy",},},
     {"roomId":{"name":"stgTest","path":"rooms/stgTest/stgTest.yy",},},
   ],

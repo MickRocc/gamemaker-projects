@@ -15,7 +15,7 @@ if (!(global.next_stage && global.level_timer == 0)){
 				alarm[0] = 45;
 			}
 		}
-		// Keep running alarm[0]
+		// If the level has been completed, run alarm 0 for 45 steps
 		else{
 			alarm[0] = 45;
 		}
@@ -23,7 +23,7 @@ if (!(global.next_stage && global.level_timer == 0)){
 
 	else{
 	
-		// Keep running alarm[0] until the game is unpaused
+		// If the game is paused, run alarm 0 for 45 steps
 		alarm[0] = 45;
 	}
 }

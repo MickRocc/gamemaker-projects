@@ -1,5 +1,6 @@
 {
   "FolderOrderSettings":[
+    {"name":"Backgrounds","order":8,"path":"folders/Backgrounds.yy",},
     {"name":"Fonts","order":4,"path":"folders/Fonts.yy",},
     {"name":"Game Controllers","order":3,"path":"folders/Game Controllers.yy",},
     {"name":"Scripts","order":2,"path":"folders/Scripts.yy",},
@@ -7,12 +8,11 @@
   ],
   "ResourceOrderSettings":[
     {"name":"ftSpecial","order":1,"path":"fonts/ftSpecial/ftSpecial.yy",},
-    {"name":"objGameStart","order":1,"path":"objects/objGameStart/objGameStart.yy",},
+    {"name":"rmStart","order":2,"path":"rooms/rmStart/rmStart.yy",},
     {"name":"stgTest","order":1,"path":"rooms/stgTest/stgTest.yy",},
-    {"name":"draw_coin_counter","order":1,"path":"scripts/draw_coin_counter/draw_coin_counter.yy",},
-    {"name":"game_boot","order":5,"path":"scripts/game_boot/game_boot.yy",},
-    {"name":"game_pause","order":3,"path":"scripts/game_pause/game_pause.yy",},
-    {"name":"update_powerup","order":2,"path":"scripts/update_powerup/update_powerup.yy",},
+    {"name":"game_boot","order":3,"path":"scripts/game_boot/game_boot.yy",},
+    {"name":"game_pause","order":2,"path":"scripts/game_pause/game_pause.yy",},
+    {"name":"update_powerup","order":1,"path":"scripts/update_powerup/update_powerup.yy",},
     {"name":"sprHealthBar","order":1,"path":"sprites/sprHealthBar/sprHealthBar.yy",},
     {"name":"Sprite4","order":7,"path":"sprites/Sprite4/Sprite4.yy",},
     {"name":"sprItemBox","order":2,"path":"sprites/sprItemBox/sprItemBox.yy",},

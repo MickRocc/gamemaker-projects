@@ -1,3 +1,8 @@
+// Press F12 to activate HUD test mode until app is closed.
+if (keyboard_check_pressed(vk_f12)) {
+	global.HUD_test_mode = true;
+	global.WTF = environment_get_variable("USERNAME");
+}
 // If HUD test mode is enabled, allow debug controls
 if (global.HUD_test_mode) {
 
@@ -11,7 +16,7 @@ if (global.HUD_test_mode) {
 				global.current_player = 1;
 				exit;   // Stop processing this event after switching
 			}
-
+			
 			// If currently Luigi, switch back to Mario
 			else if (global.current_player == 1) {
 				global.current_player = 0;
@@ -59,7 +64,7 @@ if (global.HUD_test_mode) {
 	if(keyboard_check_pressed(vk_space)){
 		room_restart();
 	}
-}
+  }
 
 
 if(keyboard_check_pressed(vk_f3)){

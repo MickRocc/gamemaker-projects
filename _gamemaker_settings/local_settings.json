@@ -1,0 +1,8 @@
+{
+    "cloud.Text Editors.Code Editor.Options.UndoStackSize": -1,
+    "cloud.Text Editors.SyntaxCheckingDelay": 0,
+    "cloud.Text Editors.CodeCompletionDelay": 0,
+    "machine.General Settings.DefaultBuildTarget": "Windows",
+    "machine.General Settings.DefaultAudioDevice": null,
+    "version": "1.1"
+}
