@@ -1,5 +1,4 @@
 // objDisplayController - Create event
-
 global.baseWidth  = 1920;
 global.baseHeight = 1080;
 
@@ -10,9 +9,11 @@ display_set_gui_size(global.baseWidth, global.baseHeight);
 camera_set_view_size(view_camera[0], global.baseWidth, global.baseHeight);
 
 function resizeViewport() {
+    // Get the current window dimensions.
     var windowWidth  = window_get_width();
     var windowHeight = window_get_height();
 
+    // Calculate the scaling factor based on the window size and base dimensions.
     var scaleX = windowWidth / global.baseWidth;
     var scaleY = windowHeight / global.baseHeight;
     var scale  = min(scaleX, scaleY);
@@ -25,11 +26,16 @@ function resizeViewport() {
     var viewportX = floor((windowWidth - viewportWidth) * 0.5);
     var viewportY = floor((windowHeight - viewportHeight) * 0.5);
 
+    // Set the viewport position and size.
     view_set_xport(0, viewportX);
     view_set_yport(0, viewportY);
     view_set_wport(0, viewportWidth);
     view_set_hport(0, viewportHeight);
 }
 
+// Call the function to set the initial viewport size and position.
 resizeViewport();
+
+// Add an event listener to handle window resizing.
 display_set_gui_size(1920, 1080);
+
