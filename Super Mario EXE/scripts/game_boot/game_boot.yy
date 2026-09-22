@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"game_pause",
+  "%Name":"game_boot",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"game_pause",
+  "name":"game_boot",
   "parent":{
-    "name":"scripts",
-    "path":"folders/scripts.yy",
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

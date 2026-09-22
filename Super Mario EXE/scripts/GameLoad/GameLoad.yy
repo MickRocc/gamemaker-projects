@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"GameLoad",
   "parent":{
-    "name":"Super Mario EXE",
-    "path":"Super Mario EXE.yyp",
+    "name":"scripts",
+    "path":"folders/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

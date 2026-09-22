@@ -18,7 +18,7 @@
   "name":"stgTest_transition",
   "parent":{
     "name":"Stages",
-    "path":"folders/Stages.yy",
+    "path":"folders/rooms/Stages.yy",
   },
   "parentRoom":null,
   "physicsSettings":{
