@@ -12,6 +12,7 @@
     {"name":"objDisplayController","order":2,"path":"objects/objDisplayController/objDisplayController.yy",},
     {"name":"objGameStart","order":1,"path":"objects/objGameStart/objGameStart.yy",},
     {"name":"stgTest","order":1,"path":"rooms/stgTest/stgTest.yy",},
+    {"name":"RoomUI","order":6,"path":"roomui/RoomUI/RoomUI.yy",},
     {"name":"game_pause","order":2,"path":"scripts/game_pause/game_pause.yy",},
     {"name":"GameLoad","order":3,"path":"scripts/GameLoad/GameLoad.yy",},
     {"name":"update_powerup","order":1,"path":"scripts/update_powerup/update_powerup.yy",},
