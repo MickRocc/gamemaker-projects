@@ -1,2 +1,0 @@
-// objDisplayController - Step event
-resizeViewport();

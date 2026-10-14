@@ -1,41 +1,41 @@
-function update_powerup(player, increase) {
+function update_powerup(_player, _increase) {
 
     // Pick the correct powerup variable
-    var powerup;
+    var _power_up;
 
-    if (player == 0) {
-        powerup = global.Mario_powerup;
+    if (_player == 0) {
+        _power_up = global.mario_power_up;
     }
-    else if (player == 1) {
-        powerup = global.Luigi_powerup;
+    else if (_player == 1) {
+        _power_up = global.luigi_power_up;
     }
     else {
         exit; // invalid player
     }
 
     // Increase
-    if (increase) {
-        if (powerup < 3) {
-            powerup += 1;
+    if (_increase) {
+        if (_power_up < 3) {
+            _power_up += 1;
         } else {
             exit;
         }
     }
     // Decrease
     else {
-        if (powerup > 0) {
-            powerup -= 1;
+        if (_power_up > 0) {
+            _power_up -= 1;
         } else {
-			powerup =  0;
+			_power_up =  0;
             exit;
         }
     }
 
     // Write back to the correct global
-    if (player == 0) {
-        global.Mario_powerup = powerup;
+    if (_player == 0) {
+        global.mario_power_up = powerup;
     }
     else {
-        global.Luigi_powerup = powerup;
+        global.luigi_power_up = powerup;
     }
 }
