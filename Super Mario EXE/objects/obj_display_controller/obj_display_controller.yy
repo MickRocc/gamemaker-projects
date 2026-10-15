@@ -26,16 +26,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v2","%Name":"variable_name","filters":[],"listItems":[],"multiselect":false,"name":"variable_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0.0","varType":0,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_transition",
-    "path":"sprites/spr_transition/spr_transition.yy",
+    "name":"spr_display_controller",
+    "path":"sprites/spr_display_controller/spr_display_controller.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

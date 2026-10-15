@@ -47,6 +47,7 @@
     {"id":{"name":"update_powerup","path":"scripts/update_powerup/update_powerup.yy",},},
     {"id":{"name":"bkTitle","path":"sprites/bkTitle/bkTitle.yy",},},
     {"id":{"name":"spr_coin_counter","path":"sprites/spr_coin_counter/spr_coin_counter.yy",},},
+    {"id":{"name":"spr_cursor","path":"sprites/spr_cursor/spr_cursor.yy",},},
     {"id":{"name":"spr_display_controller","path":"sprites/spr_display_controller/spr_display_controller.yy",},},
     {"id":{"name":"spr_game_start","path":"sprites/spr_game_start/spr_game_start.yy",},},
     {"id":{"name":"spr_health_bar","path":"sprites/spr_health_bar/spr_health_bar.yy",},},

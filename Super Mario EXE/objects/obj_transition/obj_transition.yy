@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_display_controller",
-    "path":"sprites/spr_display_controller/spr_display_controller.yy",
+    "name":"spr_transition",
+    "path":"sprites/spr_transition/spr_transition.yy",
   },
   "spriteMaskId":null,
   "visible":true,

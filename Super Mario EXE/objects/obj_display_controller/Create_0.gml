@@ -8,6 +8,7 @@ display_set_gui_size(global.base_width, global.base_height);
 // Camera uses room/game coordinates.
 camera_set_view_size(view_camera[0], global.base_width, global.base_height);
 
+
 function resize_viewport() {
     // Get the current window dimensions.
     var _window_width  = window_get_width();
