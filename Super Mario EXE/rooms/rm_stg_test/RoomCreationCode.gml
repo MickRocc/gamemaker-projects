@@ -25,8 +25,8 @@ global.stage_complete		= false;
 /* Ensure the HUD's alarm[0] and alarm[1] are running
    (BUG FIX #2) */
 
-obj_hud.alarm[0]				= 1;
-obj_hud.alarm[1]				= 1;
+obj_ctrl_hud.alarm[0]				= 1;
+obj_ctrl_hud.alarm[1]				= 1;
 
 /* BUG FIX #1 Add one to the timer to override stage
    starting at one minus the total time.

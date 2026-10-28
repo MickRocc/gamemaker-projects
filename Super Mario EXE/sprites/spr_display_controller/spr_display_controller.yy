@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"sprites",
-    "path":"folders/sprites.yy",
+    "name":"misc-controller",
+    "path":"folders/sprites/misc-controller.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
